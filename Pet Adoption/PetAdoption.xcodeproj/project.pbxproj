@@ -7,15 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		AC1432652B4576F50005B79E /* Pet_AdoptionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1432642B4576F50005B79E /* Pet_AdoptionApp.swift */; };
+		AC1432652B4576F50005B79E /* PetAdoptionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1432642B4576F50005B79E /* PetAdoptionApp.swift */; };
 		AC1432672B4576F50005B79E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1432662B4576F50005B79E /* ContentView.swift */; };
 		AC1432692B4576F70005B79E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC1432682B4576F70005B79E /* Assets.xcassets */; };
 		AC14326C2B4576F70005B79E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC14326B2B4576F70005B79E /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		AC1432612B4576F50005B79E /* Pet Adoption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pet Adoption.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AC1432642B4576F50005B79E /* Pet_AdoptionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet_AdoptionApp.swift; sourceTree = "<group>"; };
+		AC1432612B4576F50005B79E /* PetAdoption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetAdoption.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC1432642B4576F50005B79E /* PetAdoptionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetAdoptionApp.swift; sourceTree = "<group>"; };
 		AC1432662B4576F50005B79E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC1432682B4576F70005B79E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC14326B2B4576F70005B79E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -43,7 +43,7 @@
 		AC1432622B4576F50005B79E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				AC1432612B4576F50005B79E /* Pet Adoption.app */,
+				AC1432612B4576F50005B79E /* PetAdoption.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -51,7 +51,7 @@
 		AC1432632B4576F50005B79E /* Pet Adoption */ = {
 			isa = PBXGroup;
 			children = (
-				AC1432642B4576F50005B79E /* Pet_AdoptionApp.swift */,
+				AC1432642B4576F50005B79E /* PetAdoptionApp.swift */,
 				AC1432662B4576F50005B79E /* ContentView.swift */,
 				AC1432682B4576F70005B79E /* Assets.xcassets */,
 				AC14326A2B4576F70005B79E /* Preview Content */,
@@ -70,9 +70,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		AC1432602B4576F50005B79E /* Pet Adoption */ = {
+		AC1432602B4576F50005B79E /* PetAdoption */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = AC14326F2B4576F70005B79E /* Build configuration list for PBXNativeTarget "Pet Adoption" */;
+			buildConfigurationList = AC14326F2B4576F70005B79E /* Build configuration list for PBXNativeTarget "PetAdoption" */;
 			buildPhases = (
 				AC14325D2B4576F50005B79E /* Sources */,
 				AC14325E2B4576F50005B79E /* Frameworks */,
@@ -82,9 +82,9 @@
 			);
 			dependencies = (
 			);
-			name = "Pet Adoption";
+			name = PetAdoption;
 			productName = "Pet Adoption";
-			productReference = AC1432612B4576F50005B79E /* Pet Adoption.app */;
+			productReference = AC1432612B4576F50005B79E /* PetAdoption.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +102,7 @@
 					};
 				};
 			};
-			buildConfigurationList = AC14325C2B4576F50005B79E /* Build configuration list for PBXProject "Pet Adoption" */;
+			buildConfigurationList = AC14325C2B4576F50005B79E /* Build configuration list for PBXProject "PetAdoption" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +115,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				AC1432602B4576F50005B79E /* Pet Adoption */,
+				AC1432602B4576F50005B79E /* PetAdoption */,
 			);
 		};
 /* End PBXProject section */
@@ -138,7 +138,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AC1432672B4576F50005B79E /* ContentView.swift in Sources */,
-				AC1432652B4576F50005B79E /* Pet_AdoptionApp.swift in Sources */,
+				AC1432652B4576F50005B79E /* PetAdoptionApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -197,7 +197,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -254,7 +254,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -274,11 +274,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Pet Adoption/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pet Adoption";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -302,11 +303,12 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Pet Adoption/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pet Adoption";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,7 +325,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		AC14325C2B4576F50005B79E /* Build configuration list for PBXProject "Pet Adoption" */ = {
+		AC14325C2B4576F50005B79E /* Build configuration list for PBXProject "PetAdoption" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC14326D2B4576F70005B79E /* Debug */,
@@ -332,7 +334,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		AC14326F2B4576F70005B79E /* Build configuration list for PBXNativeTarget "Pet Adoption" */ = {
+		AC14326F2B4576F70005B79E /* Build configuration list for PBXNativeTarget "PetAdoption" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				AC1432702B4576F70005B79E /* Debug */,
