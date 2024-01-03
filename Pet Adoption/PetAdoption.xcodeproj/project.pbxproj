@@ -12,15 +12,19 @@
 		AC1432692B4576F70005B79E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC1432682B4576F70005B79E /* Assets.xcassets */; };
 		AC14326C2B4576F70005B79E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AC14326B2B4576F70005B79E /* Preview Assets.xcassets */; };
 		AC14327E2B457D4F0005B79E /* APIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC14327D2B457D4F0005B79E /* APIConstants.swift */; };
+		BA3421C8CA36F195B5CCD50F /* Pods_PetAdoption.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FBACC486AC01CC7D81E9B3F9 /* Pods_PetAdoption.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		421E0BE8A5EBCF47A7C3BEFF /* Pods-PetAdoption.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetAdoption.debug.xcconfig"; path = "Target Support Files/Pods-PetAdoption/Pods-PetAdoption.debug.xcconfig"; sourceTree = "<group>"; };
 		AC1432612B4576F50005B79E /* PetAdoption.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PetAdoption.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AC1432642B4576F50005B79E /* PetAdoptionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetAdoptionApp.swift; sourceTree = "<group>"; };
 		AC1432662B4576F50005B79E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		AC1432682B4576F70005B79E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AC14326B2B4576F70005B79E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		AC14327D2B457D4F0005B79E /* APIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstants.swift; sourceTree = "<group>"; };
+		E0AAD94DBE03B4C16F599F10 /* Pods-PetAdoption.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PetAdoption.release.xcconfig"; path = "Target Support Files/Pods-PetAdoption/Pods-PetAdoption.release.xcconfig"; sourceTree = "<group>"; };
+		FBACC486AC01CC7D81E9B3F9 /* Pods_PetAdoption.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PetAdoption.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +32,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BA3421C8CA36F195B5CCD50F /* Pods_PetAdoption.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -39,6 +44,8 @@
 			children = (
 				AC1432632B4576F50005B79E /* Pet Adoption */,
 				AC1432622B4576F50005B79E /* Products */,
+				E34A049D45F1F5D5FCE786B1 /* Pods */,
+				CAD52FBF9C8AD97F33511E1A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -118,6 +125,24 @@
 			path = Api;
 			sourceTree = "<group>";
 		};
+		CAD52FBF9C8AD97F33511E1A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FBACC486AC01CC7D81E9B3F9 /* Pods_PetAdoption.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E34A049D45F1F5D5FCE786B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				421E0BE8A5EBCF47A7C3BEFF /* Pods-PetAdoption.debug.xcconfig */,
+				E0AAD94DBE03B4C16F599F10 /* Pods-PetAdoption.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,6 +150,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = AC14326F2B4576F70005B79E /* Build configuration list for PBXNativeTarget "PetAdoption" */;
 			buildPhases = (
+				702D27D0187EE0B63B0B1ED8 /* [CP] Check Pods Manifest.lock */,
 				AC14325D2B4576F50005B79E /* Sources */,
 				AC14325E2B4576F50005B79E /* Frameworks */,
 				AC14325F2B4576F50005B79E /* Resources */,
@@ -182,6 +208,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		702D27D0187EE0B63B0B1ED8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PetAdoption-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		AC14325D2B4576F50005B79E /* Sources */ = {
@@ -318,6 +369,7 @@
 		};
 		AC1432702B4576F70005B79E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 421E0BE8A5EBCF47A7C3BEFF /* Pods-PetAdoption.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -347,6 +399,7 @@
 		};
 		AC1432712B4576F70005B79E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0AAD94DBE03B4C16F599F10 /* Pods-PetAdoption.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
