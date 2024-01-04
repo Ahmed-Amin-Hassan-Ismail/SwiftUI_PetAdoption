@@ -27,6 +27,8 @@
 		AC14329C2B47119E0005B79E /* Pagination.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC14329B2B47119E0005B79E /* Pagination.swift */; };
 		AC14329F2B4711B90005B79E /* Organization.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC14329E2B4711B90005B79E /* Organization.swift */; };
 		AC1432A22B4711CF0005B79E /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1432A12B4711CF0005B79E /* User.swift */; };
+		AC1432A42B4716130005B79E /* AnimalsMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC1432A32B4716130005B79E /* AnimalsMock.swift */; };
+		AC1432A62B4719220005B79E /* AnimalsMock.json in Resources */ = {isa = PBXBuildFile; fileRef = AC1432A52B4719220005B79E /* AnimalsMock.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		AC14329B2B47119E0005B79E /* Pagination.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pagination.swift; sourceTree = "<group>"; };
 		AC14329E2B4711B90005B79E /* Organization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Organization.swift; sourceTree = "<group>"; };
 		AC1432A12B4711CF0005B79E /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		AC1432A32B4716130005B79E /* AnimalsMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsMock.swift; sourceTree = "<group>"; };
+		AC1432A52B4719220005B79E /* AnimalsMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = AnimalsMock.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +101,7 @@
 			isa = PBXGroup;
 			children = (
 				AC14326B2B4576F70005B79E /* Preview Assets.xcassets */,
+				AC1432A52B4719220005B79E /* AnimalsMock.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -171,6 +176,7 @@
 			isa = PBXGroup;
 			children = (
 				AC1432822B470F740005B79E /* Animal.swift */,
+				AC1432A32B4716130005B79E /* AnimalsMock.swift */,
 				AC1432852B4710CE0005B79E /* Coat.swift */,
 				AC1432872B4710E20005B79E /* Size.swift */,
 				AC1432892B4710FA0005B79E /* Gender.swift */,
@@ -264,6 +270,7 @@
 			files = (
 				AC14326C2B4576F70005B79E /* Preview Assets.xcassets in Resources */,
 				AC1432692B4576F70005B79E /* Assets.xcassets in Resources */,
+				AC1432A62B4719220005B79E /* AnimalsMock.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -308,6 +315,7 @@
 				AC1432672B4576F50005B79E /* ContentView.swift in Sources */,
 				AC1432652B4576F50005B79E /* PetAdoptionApp.swift in Sources */,
 				AC1432922B47114F0005B79E /* VideoLink.swift in Sources */,
+				AC1432A42B4716130005B79E /* AnimalsMock.swift in Sources */,
 				AC1432882B4710E20005B79E /* Size.swift in Sources */,
 				AC1432862B4710CE0005B79E /* Coat.swift in Sources */,
 				AC1432A22B4711CF0005B79E /* User.swift in Sources */,

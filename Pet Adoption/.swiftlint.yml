@@ -3,7 +3,7 @@ excluded:
   
 disabled_rules:
   - orphaned_doc_comment
-  
+  - trailing_whitespace
 
 force_cast: warning # 1
 

@@ -7,8 +7,6 @@
 
 import Foundation
 
-
-
 struct Animal: Codable {
     var id: Int
     let organizationId: String
@@ -34,10 +32,3 @@ struct Animal: Codable {
     let distance: Double?
     var ranking: Int? = 0
 }
-
-
-
-
-    
- 
-
