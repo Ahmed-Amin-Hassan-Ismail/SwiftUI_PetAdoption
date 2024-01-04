@@ -1,0 +1,16 @@
+excluded:
+  - DerivedData
+  
+disabled_rules:
+  - orphaned_doc_comment
+  
+
+force_cast: warning # 1
+
+identifier_name: # 2
+  excluded:
+    - i
+    - id
+    - x
+    - y
+    - z

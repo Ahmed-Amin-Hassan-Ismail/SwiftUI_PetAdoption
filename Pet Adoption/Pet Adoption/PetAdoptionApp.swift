@@ -15,3 +15,27 @@ struct PetAdoptionApp: App {
         }
     }
 }
+
+class Service: AnimalFetcher {
+    
+    func fetchAnimals() {
+        // fetching animals .....
+    }
+}
+
+protocol AnimalFetcher {
+    func fetchAnimals() // known as POP which now the confirmed class can be used with different context and different purpose ....
+}
+
+class AnimalNearYouViewModel {
+    let service: AnimalFetcher // so viewModel is depend on service and service is concrete type and this is wrong....
+    
+    
+    init(service: AnimalFetcher) {
+        self.service = service
+    }
+    
+    func fetchAnimal() {
+        service.fetchAnimals()
+    }
+}
