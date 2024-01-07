@@ -12,7 +12,7 @@ struct MainView: View {
     var body: some View {
         TabView {
             
-            AnimalIsNearYouView()
+            AnimalsNearYouView()
                 .tabItem {
                     Label("Near you",
                           systemImage: "location")

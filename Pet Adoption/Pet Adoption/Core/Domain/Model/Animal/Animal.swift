@@ -7,18 +7,18 @@
 
 import Foundation
 
-struct Animal: Codable {
-    var id: Int
-    let organizationId: String
-    let url: URL
+struct Animal: Codable, Identifiable {
+    var id: Int?
+    let organizationId: String?
+    let url: URL?
     let type: String
-    let species: String
+    let species: String?
     var breeds: Breed
     var colors: APIColors
     let age: Age
     let gender: Gender
     let size: Size
-    let coat: Coat
+    let coat: Coat?
     let name: String
     let description: String?
     let photos: [PhotoSizes]
@@ -31,4 +31,8 @@ struct Animal: Codable {
     let publishedAt: String?
     let distance: Double?
     var ranking: Int? = 0
+
+    var picture: URL? {
+      photos.first?.medium ?? photos.first?.large
+    }
 }
