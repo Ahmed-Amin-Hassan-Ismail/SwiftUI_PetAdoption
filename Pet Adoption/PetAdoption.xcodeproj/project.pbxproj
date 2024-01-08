@@ -41,11 +41,13 @@
 		AC626AFF2B4B36BB00167D16 /* AuthTokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626AFE2B4B36BB00167D16 /* AuthTokenModel.swift */; };
 		AC626B022B4B399600167D16 /* AnimalsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B012B4B399600167D16 /* AnimalsRequest.swift */; };
 		AC626B042B4B3A1E00167D16 /* AnimalsContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B032B4B3A1E00167D16 /* AnimalsContainer.swift */; };
-		AC626B072B4B3AA800167D16 /* AnimalIsNearYouViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B062B4B3AA800167D16 /* AnimalIsNearYouViewModel.swift */; };
+		AC626B072B4B3AA800167D16 /* AnimalsNearYouViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B062B4B3AA800167D16 /* AnimalsNearYouViewModel.swift */; };
 		AC626B092B4B3C0300167D16 /* AnimalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B082B4B3C0300167D16 /* AnimalRow.swift */; };
 		AC626B0B2B4B424100167D16 /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B0A2B4B424100167D16 /* AccessTokenManager.swift */; };
 		AC626B102B4B43A600167D16 /* KeyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B0F2B4B43A600167D16 /* KeyConstants.swift */; };
 		AC626B712B4C633F00167D16 /* AnimalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B702B4C633F00167D16 /* AnimalDetailsView.swift */; };
+		AC626B742B4C71D500167D16 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B732B4C71D500167D16 /* Service.swift */; };
+		AC626B762B4C7CE700167D16 /* AnimalAttributesCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B752B4C7CE700167D16 /* AnimalAttributesCard.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,11 +86,13 @@
 		AC626AFE2B4B36BB00167D16 /* AuthTokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthTokenModel.swift; sourceTree = "<group>"; };
 		AC626B012B4B399600167D16 /* AnimalsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsRequest.swift; sourceTree = "<group>"; };
 		AC626B032B4B3A1E00167D16 /* AnimalsContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsContainer.swift; sourceTree = "<group>"; };
-		AC626B062B4B3AA800167D16 /* AnimalIsNearYouViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalIsNearYouViewModel.swift; sourceTree = "<group>"; };
+		AC626B062B4B3AA800167D16 /* AnimalsNearYouViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalsNearYouViewModel.swift; sourceTree = "<group>"; };
 		AC626B082B4B3C0300167D16 /* AnimalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalRow.swift; sourceTree = "<group>"; };
 		AC626B0A2B4B424100167D16 /* AccessTokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenManager.swift; sourceTree = "<group>"; };
 		AC626B0F2B4B43A600167D16 /* KeyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyConstants.swift; sourceTree = "<group>"; };
 		AC626B702B4C633F00167D16 /* AnimalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimalDetailsView.swift; path = ../../../../../../../../.Trash/AnimalDetails/View/AnimalDetailsView.swift; sourceTree = "<group>"; };
+		AC626B732B4C71D500167D16 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		AC626B752B4C7CE700167D16 /* AnimalAttributesCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalAttributesCard.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -161,6 +165,7 @@
 		AC1432742B4578D80005B79E /* AnimalNearYou */ = {
 			isa = PBXGroup;
 			children = (
+				AC626B722B4C71CD00167D16 /* Service */,
 				AC626B052B4B3A9B00167D16 /* ViewModel */,
 				AC626AE02B4B1A5100167D16 /* View */,
 			);
@@ -268,6 +273,7 @@
 			children = (
 				AC626AE32B4B1A6600167D16 /* AnimalsNearYouView.swift */,
 				AC626B082B4B3C0300167D16 /* AnimalRow.swift */,
+				AC626B752B4C7CE700167D16 /* AnimalAttributesCard.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -351,7 +357,7 @@
 		AC626B052B4B3A9B00167D16 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				AC626B062B4B3AA800167D16 /* AnimalIsNearYouViewModel.swift */,
+				AC626B062B4B3AA800167D16 /* AnimalsNearYouViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -378,6 +384,14 @@
 				AC626B702B4C633F00167D16 /* AnimalDetailsView.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		AC626B722B4C71CD00167D16 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				AC626B732B4C71D500167D16 /* Service.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -498,15 +512,17 @@
 				AC626AF92B4B2C5900167D16 /* DataParser.swift in Sources */,
 				AC626AEA2B4B1CE200167D16 /* Request.swift in Sources */,
 				AC1432862B4710CE0005B79E /* Coat.swift in Sources */,
-				AC626B072B4B3AA800167D16 /* AnimalIsNearYouViewModel.swift in Sources */,
+				AC626B072B4B3AA800167D16 /* AnimalsNearYouViewModel.swift in Sources */,
 				AC626B022B4B399600167D16 /* AnimalsRequest.swift in Sources */,
 				AC626AEC2B4B1DC600167D16 /* RequestType.swift in Sources */,
 				AC626AE42B4B1A6600167D16 /* AnimalsNearYouView.swift in Sources */,
+				AC626B742B4C71D500167D16 /* Service.swift in Sources */,
 				AC626B0B2B4B424100167D16 /* AccessTokenManager.swift in Sources */,
 				AC1432A22B4711CF0005B79E /* User.swift in Sources */,
 				AC1432942B4711620005B79E /* AnimalAttributes.swift in Sources */,
 				AC626AF42B4B28C200167D16 /* APIManager.swift in Sources */,
 				AC626AFC2B4B33FC00167D16 /* AuthTokenRequest.swift in Sources */,
+				AC626B762B4C7CE700167D16 /* AnimalAttributesCard.swift in Sources */,
 				AC626B712B4C633F00167D16 /* AnimalDetailsView.swift in Sources */,
 				AC14328A2B4710FA0005B79E /* Gender.swift in Sources */,
 				AC1432962B4711730005B79E /* AnimalEnvironment.swift in Sources */,

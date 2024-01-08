@@ -9,21 +9,42 @@ import SwiftUI
 
 struct AnimalsNearYouView: View {
     
-    @StateObject private var viewModel = AnimalIsNearYouViewModel()
+    // MARK: - Properties
+    
+    @ObservedObject private var viewModel: AnimalsNearYouViewModel
+    
+    // MARK: - Init
+    
+    init(viewModel: AnimalsNearYouViewModel) {
+        self.viewModel = viewModel
+    }
     
     var body: some View {
         NavigationView {
             List {
-                ForEach(viewModel.animals ?? []) { animal in
-                    AnimalRow(animal: animal)
-                        .onTapGesture {
-                            viewModel.navigateToAnimalDetails()
+                ForEach(viewModel.animals) { animal in
+                    HStack {
+                        AnimalRow(animal: animal)
+                        Image(systemName: "chevron.right")
+                    }
+                    .onTapGesture {
+                        viewModel.navigateToAnimalDetails()
+                    }
+                }
+                
+                if !viewModel.animals.isEmpty && viewModel.hasMoreAnimals {
+                    ProgressView("Finding more animals...")
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .task {
+                           await viewModel.fetchMoreAnimals()
                         }
                 }
+                
             }
             .listStyle(.plain)
             .overlay(content: {
-                if viewModel.isLoading {
+                if (viewModel.isLoading) && (viewModel.animals.isEmpty) {
                     ProgressView("Finding Animals near you...")
                 }
             })
@@ -38,5 +59,8 @@ struct AnimalsNearYouView: View {
 }
 
 #Preview {
-    AnimalsNearYouView()
+    AnimalsNearYouView(
+        viewModel: AnimalsNearYouViewModel(
+            service: ServiceAnimalFetcher(
+                requestManager: RequestManager())))
 }

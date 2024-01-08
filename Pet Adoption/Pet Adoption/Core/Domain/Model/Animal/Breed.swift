@@ -13,4 +13,8 @@ struct Breed: Codable {
   var secondary: String?
   var mixed: Bool?
   var unknown: Bool?
+    
+    var breed: String {
+      return primary ?? secondary ?? ""
+    }
 }

@@ -45,7 +45,24 @@ struct AnimalRow: View {
                 Text(animal.name)
                     .multilineTextAlignment(.leading)
                     .font(.title3)
-            }            
+                
+                Text("\(animal.breeds.breed) \(animal.type)")
+                    .font(.callout)
+                
+                if let description = animal.description {
+                  Text(description)
+                    .lineLimit(2)
+                    .font(.footnote)
+                }
+                
+                HStack {
+                  Text(animal.age.rawValue)
+                    .modifier(AnimalAttributesCard(color: animal.age.color))
+                  Text(animal.gender.rawValue)
+                    .modifier(AnimalAttributesCard(color: .pink))
+                }
+            }
+            .lineLimit(1)
         }
         .frame(maxWidth: .infinity, alignment: .leading)
     }
