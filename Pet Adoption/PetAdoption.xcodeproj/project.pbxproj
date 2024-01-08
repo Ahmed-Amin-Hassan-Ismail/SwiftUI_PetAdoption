@@ -45,7 +45,6 @@
 		AC626B092B4B3C0300167D16 /* AnimalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B082B4B3C0300167D16 /* AnimalRow.swift */; };
 		AC626B0B2B4B424100167D16 /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B0A2B4B424100167D16 /* AccessTokenManager.swift */; };
 		AC626B102B4B43A600167D16 /* KeyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B0F2B4B43A600167D16 /* KeyConstants.swift */; };
-		AC626B142B4C23C800167D16 /* PetAdoption.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AC626B122B4C23C800167D16 /* PetAdoption.xcdatamodeld */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -88,7 +87,6 @@
 		AC626B082B4B3C0300167D16 /* AnimalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalRow.swift; sourceTree = "<group>"; };
 		AC626B0A2B4B424100167D16 /* AccessTokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenManager.swift; sourceTree = "<group>"; };
 		AC626B0F2B4B43A600167D16 /* KeyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyConstants.swift; sourceTree = "<group>"; };
-		AC626B132B4C23C800167D16 /* PetAdoption.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetAdoption.xcdatamodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,7 +178,6 @@
 			isa = PBXGroup;
 			children = (
 				AC14327A2B457D230005B79E /* API */,
-				AC626B112B4C23B200167D16 /* CoreData */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -200,6 +197,8 @@
 		AC1432802B470F630005B79E /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				AC626B002B4B398800167D16 /* Animals */,
+				AC626AFD2B4B369C00167D16 /* Auth */,
 				AC1432812B470F6D0005B79E /* Model */,
 			);
 			path = Domain;
@@ -297,8 +296,6 @@
 		AC626AE82B4B1CD500167D16 /* Request */ = {
 			isa = PBXGroup;
 			children = (
-				AC626AFD2B4B369C00167D16 /* Auth */,
-				AC626B002B4B398800167D16 /* Animals */,
 				AC626AF52B4B2AF800167D16 /* RequestManager.swift */,
 				AC626AE92B4B1CE200167D16 /* Request.swift */,
 				AC626AEB2B4B1DC600167D16 /* RequestType.swift */,
@@ -334,8 +331,8 @@
 			isa = PBXGroup;
 			children = (
 				AC626AFB2B4B33FC00167D16 /* AuthTokenRequest.swift */,
-				AC626B0A2B4B424100167D16 /* AccessTokenManager.swift */,
 				AC626AFE2B4B36BB00167D16 /* AuthTokenModel.swift */,
+				AC626B0A2B4B424100167D16 /* AccessTokenManager.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -362,14 +359,6 @@
 				AC626B0F2B4B43A600167D16 /* KeyConstants.swift */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		AC626B112B4C23B200167D16 /* CoreData */ = {
-			isa = PBXGroup;
-			children = (
-				AC626B122B4C23C800167D16 /* PetAdoption.xcdatamodeld */,
-			);
-			path = CoreData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -497,7 +486,6 @@
 				AC626B0B2B4B424100167D16 /* AccessTokenManager.swift in Sources */,
 				AC1432A22B4711CF0005B79E /* User.swift in Sources */,
 				AC1432942B4711620005B79E /* AnimalAttributes.swift in Sources */,
-				AC626B142B4C23C800167D16 /* PetAdoption.xcdatamodeld in Sources */,
 				AC626AF42B4B28C200167D16 /* APIManager.swift in Sources */,
 				AC626AFC2B4B33FC00167D16 /* AuthTokenRequest.swift in Sources */,
 				AC14328A2B4710FA0005B79E /* Gender.swift in Sources */,
@@ -709,19 +697,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		AC626B122B4C23C800167D16 /* PetAdoption.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				AC626B132B4C23C800167D16 /* PetAdoption.xcdatamodel */,
-			);
-			currentVersion = AC626B132B4C23C800167D16 /* PetAdoption.xcdatamodel */;
-			path = PetAdoption.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = AC1432592B4576F50005B79E /* Project object */;
 }
