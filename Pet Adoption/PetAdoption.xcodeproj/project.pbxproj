@@ -45,6 +45,7 @@
 		AC626B092B4B3C0300167D16 /* AnimalRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B082B4B3C0300167D16 /* AnimalRow.swift */; };
 		AC626B0B2B4B424100167D16 /* AccessTokenManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B0A2B4B424100167D16 /* AccessTokenManager.swift */; };
 		AC626B102B4B43A600167D16 /* KeyConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B0F2B4B43A600167D16 /* KeyConstants.swift */; };
+		AC626B712B4C633F00167D16 /* AnimalDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC626B702B4C633F00167D16 /* AnimalDetailsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -87,6 +88,7 @@
 		AC626B082B4B3C0300167D16 /* AnimalRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalRow.swift; sourceTree = "<group>"; };
 		AC626B0A2B4B424100167D16 /* AccessTokenManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessTokenManager.swift; sourceTree = "<group>"; };
 		AC626B0F2B4B43A600167D16 /* KeyConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyConstants.swift; sourceTree = "<group>"; };
+		AC626B702B4C633F00167D16 /* AnimalDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AnimalDetailsView.swift; path = ../../../../../../../../.Trash/AnimalDetails/View/AnimalDetailsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +144,7 @@
 			children = (
 				AC626AE52B4B1AB400167D16 /* Main */,
 				AC1432742B4578D80005B79E /* AnimalNearYou */,
+				AC626B6E2B4C62F200167D16 /* AnimalDetails */,
 				AC1432732B4578D40005B79E /* Search */,
 			);
 			path = Views;
@@ -361,6 +364,22 @@
 			path = Constants;
 			sourceTree = "<group>";
 		};
+		AC626B6E2B4C62F200167D16 /* AnimalDetails */ = {
+			isa = PBXGroup;
+			children = (
+				AC626B6F2B4C633600167D16 /* View */,
+			);
+			path = AnimalDetails;
+			sourceTree = "<group>";
+		};
+		AC626B6F2B4C633600167D16 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				AC626B702B4C633F00167D16 /* AnimalDetailsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -488,6 +507,7 @@
 				AC1432942B4711620005B79E /* AnimalAttributes.swift in Sources */,
 				AC626AF42B4B28C200167D16 /* APIManager.swift in Sources */,
 				AC626AFC2B4B33FC00167D16 /* AuthTokenRequest.swift in Sources */,
+				AC626B712B4C633F00167D16 /* AnimalDetailsView.swift in Sources */,
 				AC14328A2B4710FA0005B79E /* Gender.swift in Sources */,
 				AC1432962B4711730005B79E /* AnimalEnvironment.swift in Sources */,
 			);

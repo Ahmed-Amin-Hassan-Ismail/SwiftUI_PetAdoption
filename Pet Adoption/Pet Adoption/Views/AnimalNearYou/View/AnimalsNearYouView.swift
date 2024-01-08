@@ -16,8 +16,10 @@ struct AnimalsNearYouView: View {
             List {
                 ForEach(viewModel.animals ?? []) { animal in
                     AnimalRow(animal: animal)
+                        .onTapGesture {
+                            viewModel.navigateToAnimalDetails()
+                        }
                 }
-                
             }
             .listStyle(.plain)
             .overlay(content: {
@@ -25,6 +27,11 @@ struct AnimalsNearYouView: View {
                     ProgressView("Finding Animals near you...")
                 }
             })
+            .background(
+                NavigationLink(isActive: $viewModel.showSelectedAnimalDetails,
+                               destination: { AnimalDetailsView() },
+                               label: { EmptyView() })
+            )
             .navigationTitle("Animals near you")
         }
     }

@@ -47,6 +47,7 @@ struct AnimalRow: View {
                     .font(.title3)
             }            
         }
+        .frame(maxWidth: .infinity, alignment: .leading)
     }
 }
 

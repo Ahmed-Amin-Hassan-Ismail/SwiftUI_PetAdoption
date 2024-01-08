@@ -75,31 +75,3 @@ private extension AccessTokenManager {
     }
     
 }
-
-/*
-
- // MARK: - AccessTokenManagerProtocol
- extension AccessTokenManager: AccessTokenManagerProtocol {
-   func isTokenValid() -> Bool {
-     update()
-     return accessToken != nil && expiresAt.compare(Date()) == .orderedDescending
-   }
-
-   func fetchToken() -> String {
-     guard let token = accessToken else {
-       return ""
-     }
-     return token
-   }
-
-   func refreshWith(apiToken: APIToken) throws {
-     let expiresAt = apiToken.expiresAt
-     let token = apiToken.bearerAccessToken
-
-     save(token: apiToken)
-     self.expiresAt = expiresAt
-     self.accessToken = token
-   }
- }
-
- */

@@ -13,6 +13,7 @@ final class AnimalIsNearYouViewModel: ObservableObject {
     
     @Published var animals: [Animal]?
     @Published var isLoading: Bool = true
+    @Published var showSelectedAnimalDetails: Bool = false
     
     private let requestManager = RequestManager()
     
@@ -25,6 +26,13 @@ final class AnimalIsNearYouViewModel: ObservableObject {
     }
     
     // MARK: - Methods
+    
+    func navigateToAnimalDetails() {
+        
+        showSelectedAnimalDetails = true
+    }
+    
+    // MARK: - API Methods
     
     @MainActor
     private func fetchAnimals() async {
